@@ -1,0 +1,107 @@
+hs_err_pid*
+replay_pid*
+
+# Created by .ignore support plugin
+#.gitignore for java
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.ids
+**/target/
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+*.log
+*.log.*
+
+## .gitignore for intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+
+## .gitignore for eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+**/.DS_Store
+.DS_Store
+.idea
+
+
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.nar
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea_modules/
+
+##############################
+## Eclipse
+##############################
+tmp/
+.factorypath
+
+##############################
+## NetBeans
+##############################
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## Visual Studio Code
+##############################
+.vscode/
+.code-workspace
+
+##############################
+mysql-data/
