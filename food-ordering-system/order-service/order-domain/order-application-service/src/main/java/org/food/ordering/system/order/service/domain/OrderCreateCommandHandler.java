@@ -59,7 +59,7 @@ public class OrderCreateCommandHandler {
         if (optionalRestaurant.isEmpty()) {
             log.warn("Could not find restaurant with id: {}", createOrderCommand.getRestaurantId());
             throw new OrderDomainException("Could not find restaurant with id:" +
-                    createOrderCommand.getRestaurantId())
+                    createOrderCommand.getRestaurantId());
         }
 
         return optionalRestaurant.get();
