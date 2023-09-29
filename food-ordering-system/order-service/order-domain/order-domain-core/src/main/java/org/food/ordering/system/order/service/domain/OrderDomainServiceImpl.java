@@ -32,7 +32,7 @@ public class OrderDomainServiceImpl implements OrderDomainService {
 
 
     @Override
-    public OrderPaidEvent validateOrderAndInitiateOrder(Order order, DomainEventPublisher<OrderPaidEvent> orderPaidEventDomainEvent) {
+    public OrderPaidEvent payOrder(Order order, DomainEventPublisher<OrderPaidEvent> orderPaidEventDomainEvent) {
         order.pay();
         log.info("Order with id: {} is paid", order.getId().getValue());
         return new OrderPaidEvent(order, ZonedDateTime.now(ZoneId.of(UTC)), orderPaidEventDomainEvent);

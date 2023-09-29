@@ -12,7 +12,7 @@ import java.util.List;
 public interface OrderDomainService {
 
     OrderCreatedEvent validateOrderAndInitiateOrder(Order order, Restaurant restaurant, DomainEventPublisher<OrderCreatedEvent> orderCreatedEventDomainEventPublisher);
-    OrderPaidEvent validateOrderAndInitiateOrder(Order order, DomainEventPublisher<OrderPaidEvent> orderPaidEventDomainEvent);
+    OrderPaidEvent payOrder(Order order, DomainEventPublisher<OrderPaidEvent> orderPaidEventDomainEvent);
     void approveOrder(Order order);
     OrderCancelledEvent cancelOrderPayment(Order order, List<String> failureMessages, DomainEventPublisher<OrderCancelledEvent> orderCancelledEventDomainEventPublisher);
     void cancelOrder(Order order, List<String> failureMessages);
